@@ -1,0 +1,497 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* position: sticky;
+    background-color: rgba(83, 80, 80, 0.27); */
+   
+}
+
+#logo{
+   padding-left: 70px;
+   font-weight: 200;
+   color: rgb(230, 229, 229);
+}
+
+
+header nav{
+    padding-right: 70px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 35px;
+
+}
+
+header nav ul {
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: rgb(230, 229, 229);
+}
+
+
+#home-section{
+ background:url(assets/img/main.jpg) center ;
+ height: 100vh;
+ display: flex;
+ flex-direction: column;
+ gap: 20px;
+ justify-content: center;
+ align-items: center;
+}
+
+#home-section h1{
+    font-size: 75px;
+    font-weight: 500;
+    color: rgb(230, 229, 229);
+}
+
+#home-section h3{
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(230, 229, 229);
+}
+
+
+#home-section button{
+    padding: 15px 40px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(66, 66, 186);
+    color: rgb(230, 229, 229);
+    font-weight: bold;
+   font-size: 22px;
+   cursor: pointer;
+}
+
+
+@media screen and (width<=700px){
+
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        padding-top: 30px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+       
+    }
+    #logo{
+        padding-left: 0;  
+     }
+     
+     header nav{
+         padding-right: 0;
+     }
+    header nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 5px;
+       
+    
+    }
+
+    #home-section h1{
+      font-size: 35px;
+    }
+    #home-section h3{
+        font-size: 16px;
+    }
+    
+    #home-section button{
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+       font-size: 16px;
+    }
+}
+
+#destination{
+padding: 6rem 6rem;
+}
+#destination-des{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+#destination-des h1{
+   font-size: 50px;
+   font-weight: 300;
+   color: rgb(98, 96, 96);
+   padding-bottom: 30px;
+  
+}
+#destination-des p{
+    font-size: 24px;
+    /* line-height: 50px; */
+    padding: 15px;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+}
+#destination-des hr{
+    height: 3px;
+    width: 375px;
+    margin: 30px auto;
+    border: none;
+    background-color:  rgb(66, 66, 186);        
+}
+
+#img-grid{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+#img-grid div img {
+    height: 100%;
+    width: 100%;
+}
+
+#img-grid .small,.large{
+    padding: 1rem;
+    height: 350px;
+}
+#img-grid .small{
+    flex-basis: 30%;
+}
+#img-grid .large{
+    flex-basis: 70%;
+}
+
+@media screen and (width<=1000px){
+    #img-grid .small{
+        flex-basis: 50%;
+    }
+    #img-grid .large{
+        flex-basis: 50%;
+    }
+}
+@media screen and (width<=700px){
+    #destination-des h1{
+        font-size: 35px;
+        font-weight: 300;
+        color: rgb(98, 96, 96);
+        padding-bottom: 30px;
+       
+     }
+     #destination-des p{
+        font-size: 18px;
+        /* line-height: 50px; */
+        padding: 15px;
+        font-weight: 300;
+        color: rgb(79, 78, 78);
+        text-align: justify;
+    }
+    #img-grid .small{
+        flex-basis: 100%;
+    }
+    #img-grid .large{
+        flex-basis: 100%;
+    }
+    #destination-des hr{
+        width: 175px;
+    }
+   
+}
+
+
+
+/* Tour  section */
+#tour{
+  padding: 6rem 6rem;
+  background-color: rgb(243, 243, 240);
+}
+
+/* Tour Pack */
+#tour-pack{
+    width: 100%;
+    text-align: center;
+    padding: 30px;
+}
+#tour-pack h1{
+   font-size: 50px;
+   font-weight: 300;
+   color: rgb(98, 96, 96);
+   padding-bottom: 30px;
+  
+}
+#tour-pack p{
+    font-size: 24px;
+    padding: 15px;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+}
+#tour-pack hr{
+    height: 3px;
+    width: 375px;
+    margin: 30px auto;
+    border: none;
+    background-color:  rgb(66, 66, 186);        
+}
+
+#trip {
+    display:  flex;
+    flex-wrap: wrap;
+}
+
+#trip .guide,.photo,.biking,.racing{
+    flex: 50%;
+    padding: 50px;
+}
+
+#trip div i{
+     font-size: 60px;
+     margin:0 40%;
+     padding: 20px 0 ;
+     color:  rgb(129, 129, 226);
+}
+
+#trip div h1{
+    font-size: 40px;
+   color: rgb(68, 64, 64);
+   padding-bottom: 30px;
+   text-align: center;
+}
+
+#trip div p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+}
+
+@media screen and (width<=700px){
+    
+    #tour-pack p{
+        font-size: 18px;
+        /* padding: 15px; */
+        font-weight: 300;
+        color: rgb(79, 78, 78);
+    }
+    #tour-pack h1{
+        font-size: 35px;
+        font-weight: 300;
+        color: rgb(98, 96, 96);
+        padding-bottom: 30px;
+       
+     }
+    
+    #tour-pack hr{
+         width: 175px;
+     }
+     #trip div h1{
+        font-size: 35px;
+       color: rgb(68, 64, 64);
+       padding-bottom: 30px;
+       text-align: center;
+    }
+ 
+ }
+
+
+/* Testimonials Sections */
+#testimonials-section{
+    padding: 6rem 6rem;
+}
+
+#testimonials-section h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: rgb(98, 96, 96);
+    text-align: center;
+   
+ }
+#testimonials-section hr{
+    height: 3px;
+    width: 375px;
+    margin: 30px auto;
+    border: none;
+    background-color:  rgb(66, 66, 186);        
+}
+
+#testimonials-section div{
+padding:0   15%;
+
+}
+
+#testimonials-section div p{
+    font-size: 24px;
+    line-height: 35px;
+    padding: 40px;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+    text-align: center;
+}
+#testimonials-section div h4{
+    text-align: center;
+    color: rgb(90, 88, 88);
+    font-size: 18px;
+}
+@media screen and (width<=700px){
+    
+   #testimonials-section hr{
+        width: 175px;
+    }
+    #testimonials-section div{
+        padding:0   5%;
+        
+        }
+
+        #testimonials-section h1{
+            font-size: 35px;
+            font-weight: 300;
+            color: rgb(98, 96, 96);
+           
+           
+         }
+     #testimonials-section div p{
+    font-size: 18px;
+    line-height: 25px;
+    /* padding: 40px; */
+    text-align: justify;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+    text-align: center;
+}
+    
+
+}
+
+/* Learn-more section */
+#learn-more{
+    padding: 6rem 6rem;
+  background-color: rgb(243, 243, 240);
+}
+
+#learn-more h1{
+    font-size: 50px;
+    font-weight: 300;
+    color: rgb(98, 96, 96);
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+#learn-more p{
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    /* line-height: 50px; */
+    padding:0 15%;
+    font-weight: 300;
+    color: rgb(79, 78, 78);
+}
+
+#learn-more hr{
+    height: 3px;
+    width: 375px;
+    margin: 30px auto;
+    border: none;
+    background-color:  rgb(66, 66, 186);        
+}
+
+#learn-more div{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#learn-more div .email {
+    padding: 18px 15%;
+    font-size: 22px;
+   
+    
+}
+/* #learn-more div .email ::placeholder{
+    
+} */
+#learn-more div .btn{
+    color: white;
+    font-size: 22px;
+    padding: 18px 5%;
+    border-radius: 5px;
+    background-color:  rgb(66, 66, 186);      
+    border: none;
+   cursor: pointer;
+}
+
+
+@media screen and (width<=700px){
+    #learn-more h1{
+        font-size: 35px;
+        font-weight: 300;
+        color: rgb(98, 96, 96);
+       
+       
+     }
+    #learn-more div .email, .btn{
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+    #learn-more div  .btn{
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+   #learn-more hr{
+        width: 175px;
+    }
+    
+
+}
+/* Footer section */
+#footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    font-size: 18px;
+    background-color:rgb(48, 54, 71);
+    color: white;
+}
+
+#footer .icon{
+    display: flex;
+    gap: 20px;
+}
+#footer .icon  i{
+    color: white;
+    gap: 0px;
+   font-size:24px ;
+}
+
+@media screen and (width<=1050px){
+    #footer{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        
+    }
+    #footer .p2{
+        text-align: center;
+    }
+}
+
